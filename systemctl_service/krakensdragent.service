@@ -1,0 +1,12 @@
+[Unit]
+Description=KrakenSDR API Agent
+After=network.target
+
+[Service]
+ExecStart=/home/krakenrf/kraken_api_agent/kraken_api_agent.py
+Restart=always
+WorkingDirectory=/home/krakenrf/kraken_api_agent
+
+[Install]
+WantedBy=multi-user.target
+
